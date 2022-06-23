@@ -1,0 +1,39 @@
+<!-- Coded by 
+	 Name	: Nasir Raza
+	 Roll #	: KH01210813250
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Vowels and Normal Words Array
+    </title>
+    <link rel="stylesheet" href="./index.css">    
+</head>
+
+<body>
+    <div class="main">
+        <label id="forinputstring">Input String</label>
+        <input type="text" id="inputstring" placeholder="Please enter the text..." maxlength="25" onkeypress="return /[a-z]/i.test(event.key)" />
+        <button id="addwords" onClick="addWords()">Add Words</button>
+        <button id="clear" onClick="clearWords()">Clear List</button>
+    </div>
+    <div class="submain">
+        <table class="submain">
+            <caption>Vowels Words</caption>
+        </table>
+        <table class="submain">
+            <caption>Normal Words</caption>
+        </table>
+        <div class="sub">
+            <table id="vowelswords"></table>
+        </div>
+        <div class="sub">
+            <table id="normalwords"></table>
+        </div>    
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
